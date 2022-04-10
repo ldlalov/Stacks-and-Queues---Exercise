@@ -1,31 +1,26 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _01._Basic_Stack_Operations
+namespace _02._Basic_Queue_Operations
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            int[] array = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             Queue<int> queue = new Queue<int>(Console.ReadLine().Split(' ').Select(int.Parse));
-            Stack<int> stack = new Stack<int>(Console.ReadLine().Split(' ').Select(int.Parse));
-            int N = queue.Dequeue();
-            int S = queue.Dequeue();
-            int X = queue.Dequeue();
-            for (int i = 0; i < S; i++)
+            for (int i = 0; i < array[1]; i++)
             {
-                if (stack.Count > 0)
-                {
-                    stack.Pop();
-                }
-            }
-            if (stack.Count>0)
+                queue.Dequeue();
+}
+            if (queue.Count > 0)
             {
                 int smallest = int.MaxValue;
-                foreach (var item in stack)
+                foreach (var item in queue)
                 {
-                    if (item == X)
+                    if (item == array[2])
                     {
                         Console.WriteLine("true");
                         return;
