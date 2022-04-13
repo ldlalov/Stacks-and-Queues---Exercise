@@ -22,20 +22,14 @@ namespace _01._Basic_Stack_Operations
             }
             if (stack.Count>0)
             {
-                int smallest = int.MaxValue;
-                foreach (var item in stack)
+                if (stack.Contains(X))
                 {
-                    if (item == X)
-                    {
-                        Console.WriteLine("true");
-                        return;
-                    }
-                    if (item < smallest)
-                    {
-                        smallest = item;
-                    }
+                    Console.WriteLine("true");
                 }
-                Console.WriteLine(smallest);
+                else
+                {
+                    Console.WriteLine(stack.Min());
+                }
             }
             else
             {
