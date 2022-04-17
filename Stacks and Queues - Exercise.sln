@@ -9,13 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Basic Queue Operations"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Maximum and Minimum Element", "03. Maximum and Minimum Element\03. Maximum and Minimum Element.csproj", "{1D9EDB89-CB25-4763-BCC5-5E8E696D8560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Fast Food", "04. Fast Food\04. Fast Food.csproj", "{9C14BD45-34FD-4AD3-87CC-FE36D7044EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Fast Food", "04. Fast Food\04. Fast Food.csproj", "{9C14BD45-34FD-4AD3-87CC-FE36D7044EE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Fashion Boutique", "05. Fashion Boutique\05. Fashion Boutique.csproj", "{E84328D5-4D3E-4E0A-84A6-37342DE07FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Fashion Boutique", "05. Fashion Boutique\05. Fashion Boutique.csproj", "{E84328D5-4D3E-4E0A-84A6-37342DE07FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Songs Queue", "06. Songs Queue\06. Songs Queue.csproj", "{88A38EED-91D3-4753-8183-CC752F5B5360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Songs Queue", "06. Songs Queue\06. Songs Queue.csproj", "{88A38EED-91D3-4753-8183-CC752F5B5360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Truck Tour", "07. Truck Tour\07. Truck Tour.csproj", "{BAE4E570-215C-45E6-B35F-45604B71B1E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Truck Tour", "07. Truck Tour\07. Truck Tour.csproj", "{BAE4E570-215C-45E6-B35F-45604B71B1E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Balanced Parenthesis", "08. Balanced Parenthesis\08. Balanced Parenthesis.csproj", "{15DB75EC-053F-49F7-AD93-4DCF83FFA84B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Simple Text Editor", "09. Simple Text Editor\09. Simple Text Editor.csproj", "{45D0E54E-44F5-4FDC-908B-D426CECD25A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{BAE4E570-215C-45E6-B35F-45604B71B1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE4E570-215C-45E6-B35F-45604B71B1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE4E570-215C-45E6-B35F-45604B71B1E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15DB75EC-053F-49F7-AD93-4DCF83FFA84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DB75EC-053F-49F7-AD93-4DCF83FFA84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DB75EC-053F-49F7-AD93-4DCF83FFA84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DB75EC-053F-49F7-AD93-4DCF83FFA84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D0E54E-44F5-4FDC-908B-D426CECD25A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D0E54E-44F5-4FDC-908B-D426CECD25A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D0E54E-44F5-4FDC-908B-D426CECD25A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D0E54E-44F5-4FDC-908B-D426CECD25A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
