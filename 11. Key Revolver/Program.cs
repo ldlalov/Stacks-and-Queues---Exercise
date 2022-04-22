@@ -30,23 +30,23 @@ namespace _11._Key_Revolver
                     {
                         Console.WriteLine("Ping!");
                     }
-                    if (locks.Count==0)
+                    if (!locks.Any())
                     {
                         unlocked = true;
                         break;
                     }
-                    if (bulets.Count == 0)
+                    if (!bulets.Any())
                     {
                         break;
                     }
                 }
+                if (bulets.Any())
+                {
+                    Console.WriteLine("Reloading!");
+                }
                 if (unlocked)
                 {
                     break;
-                }
-                if (bulets.Count > 0 && locks.Count > 0)
-                {
-                    Console.WriteLine("Reloading!");
                 }
             }
             if (!unlocked)
