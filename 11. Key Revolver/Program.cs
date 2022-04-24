@@ -17,8 +17,10 @@ namespace _11._Key_Revolver
             bool unlocked = false;
             while (bulets.Count > 0)
             {
+                int tempSize = 0; // temp size of the barrel
                 for (int i = 0; i < size; i++)
                 {
+                    tempSize++;
                     int currentBullet = bulets.Dequeue();
                     int currentLock = locks.Peek();
                     if (currentBullet <= currentLock)
@@ -40,7 +42,7 @@ namespace _11._Key_Revolver
                         break;
                     }
                 }
-                if (bulets.Any())
+                if (bulets.Any() && tempSize == size)
                 {
                     Console.WriteLine("Reloading!");
                 }
