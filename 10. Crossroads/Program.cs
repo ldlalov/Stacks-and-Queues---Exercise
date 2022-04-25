@@ -19,24 +19,28 @@ namespace _10._Crossroads
 
                 if (command != "green")
                 {
-                    if (currentGreen >= 0)
-                    {
                         cars.Enqueue(command);
-                        currentGreen -= command.Length;
-                    }
                 }
                 else
                 {
                     while (cars.Count>0)
                     {
+                        if (currentGreen>0)
+                        {
                         string currentCar = cars.Dequeue();
+                        currentGreen -= currentCar.Length;
                         canPass -= currentCar.Length;
-                        passed++;
                         if (canPass < 0)
                         {
                             Console.WriteLine("A crash happened!");
                             Console.WriteLine($"{currentCar} was hit at {currentCar.Substring(currentCar.Length - Math.Abs(canPass), 1)}.");
                             return;
+                        }
+                        passed++;
+                        }
+                        else
+                        {
+                            break;
                         }
                     }
                     canPass = durationGreen + durationWindow;
